@@ -1,0 +1,7 @@
+summa = int(input("сколько вы хотите денег(не менее 50000)"))
+if summa >= 50000:
+    procent = summa * (3.47/100)
+    procent_r = round(procent,2)
+    print(procent_r)
+else:
+    print("Вы не можете получить кредит меньше 50000!")

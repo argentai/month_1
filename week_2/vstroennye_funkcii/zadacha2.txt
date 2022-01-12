@@ -1,0 +1,17 @@
+number1 = int(input("Введите число 1: "))
+number2 = int(input("Введите число 2: "))
+number3 = int(input("Введите число 3: "))
+number4 = int(input("Введите число 4: "))
+number5 = int(input("Введите число 5: "))
+
+l = []
+
+l.append(number1)
+l.append(number2)
+l.append(number3)
+l.append(number4)
+l.append(number5)
+
+x = set(l)
+
+print (min(x))

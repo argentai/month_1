@@ -1,0 +1,10 @@
+values = ("Razakov 32", 10, 1005, ["tables", "chairs"], 23.00)
+print (values)
+l = []
+for i in values:
+    try:
+        set(i)
+        l.append(True)
+    except TypeError:
+        l.append(False)
+print(all(l))

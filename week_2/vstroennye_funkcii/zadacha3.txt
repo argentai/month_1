@@ -1,0 +1,5 @@
+try:
+    rom = eval(input("Введите функцю: "))
+    print (rom)
+except:
+    print ("Такой функции нет")

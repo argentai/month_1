@@ -1,0 +1,15 @@
+except AttributeError as ae:
+        print("Attribute Error while processing the configuration file!\n{0}\n".format( str(ae) ) )
+        intReturnValue = 1
+    except IndexError as ie:
+        print("Index Error while processing the configuration file!\n{0}\n".format( str(ie) ) )
+        intReturnValue = 1
+    except NameError as ne:
+        print("Name Error while processing the configuration file!\n{0}\n".format( str(ne) ) )
+        intReturnValue = 1
+    except TypeError as te:
+        print("Type Error while processing the configuration file!\n{0}\n".format( str(te) ) )
+        intReturnValue = 1
+    except:
+        print("Unexpected error while processing the configuration file!\n{0}\n".format( sys.exc_info()[0] ) )
+        intReturnValue = 1

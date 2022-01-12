@@ -1,0 +1,16 @@
+number = [123, 532, 555]
+word = "text"
+try:
+    for i in range(number):
+        print (word + i) # Ошибка находится здесь, значения int и str нельзя сложить.
+except TypeError:
+    print ("Ошибка 'TypeError'! Значения 'int' и 'str' нельзя сложить!")
+
+try:
+    print (number[3]) # Ошибка здесь, в переменной "number" максимальный индекс 2 (0, 1, 2).
+except IndexError:
+    print ('Ошибка "IndexError"! Значения под таким индексом не существует!')
+try:
+    print (words) # Ошибка здесь, переменной под названием "words" у нас нет (есть переменная word).
+except NameError:
+    print ('Ошибка "NameError"! Переменной под таким имененем не существует!')
